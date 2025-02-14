@@ -19,7 +19,7 @@
    <header>
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="<?php echo base_url('uploads/img/.jpg'); ?>" height="30px" width="30px"  alt="">YRO.SPORT</a>  
+          <a class="navbar-brand" href="#"><img src="<?php echo base_url('uploads/img/logo.jpeg'); ?>" height="30px" width="30px" alt="">YRO.SPORT</a>  
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -43,15 +43,17 @@
             </ul>
             
             <!-- Input Pencarian -->
-            <form class="form-inline my-2 my-lg-0 ml-3" onsubmit="return handleSearch(event)">
+            <form class="form-inline my-2 my-lg-0" onsubmit="return handleSearch(event)">
               <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
             </form>
 
             <!-- Button Keranjang Cekout -->
-            <button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target="#checkoutModal">
-              KERANJANG CEKOUT
-            </button>
+            <div class="ml-auto">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#checkoutModal">
+                KERANJANG CEKOUT
+              </button>
+            </div>
           </div>
         </div>
       </nav>
@@ -67,7 +69,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="first-slide" src="<?= base_url('uploads/img/ronal.jpg'); ?>" alt="First slide">
+            <img class="first-slide" src="<?= base_url('uploads/img/model2.jpg'); ?>" alt="First slide">
             <div class="container">
               <div class="carousel-caption text-left">
                 <h1></h1> 
@@ -75,12 +77,12 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img class="second-slide" src="<?= base_url('uploads/img/top.png'); ?>" alt="Second slide">
+            <img class="second-slide" src="<?= base_url('uploads/img/vektor.png'); ?>" alt="Second slide">
             <div class="container">
             </div>
           </div>
           <div class="carousel-item">
-            <img class="third-slide" src="<?= base_url('uploads/img/nike.jpg'); ?>" alt="Third slide">
+            <img class="third-slide" src="<?= base_url('uploads/img/model3.jpg'); ?>" alt="Third slide">
             <div class="container">
             </div>
           </div>
@@ -95,93 +97,158 @@
         </a>
       </div>
 
-      <div class="container marketing">
-        <div class="row">
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="<?= base_url('uploads/img/niki.jpg'); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2>NIKE</h2>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="<?= base_url('uploads/img/bulet.webp'); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2>ADIDAS</h2>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <img class="rounded-circle" src="<?= base_url('uploads/img/mael.jpg'); ?>" alt="Generic placeholder image" width="140" height="140">
-            <h2>PUMA</h2>
-          </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
+      <div class="album py-5 bg-light">
+        <h2><center></center></h2>  
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/abu.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Nike Air Jordan</h3>
+                  <p class="card-price">Harga: Rp 2.500.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Air Jordan 1 Retro High')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/gbr6.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Nike Air Jordan 1 </h3>
+                  <p class="card-price">Harga: Rp 2.000.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Air Jordan High')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/tn.webp'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <div class="card-body">
+                  <h3>Nike TN AIRMAX</h3>
+                  <p class="card-price">Harga: Rp 3.000.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Air Jordan Travis Scott')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        <div class="album py-5 bg-light">
-          <h2><center></center></h2>  
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="<?= base_url('uploads/img/nike.png'); ?>" alt="Card image cap" width="100px" height="255"> 
-                  <div class="card-body">
-                    <h3>Air Jordan 1 Retro High</h3>
-                    <p class="card-price"></p>
-                    <div class="rating">
-                      <span class="star" data-value="1">&#9733;</span>
-                      <span class="star" data-value="2">&#9733;</span>
-                      <span class="star" data-value="3">&#9733;</span>
-                      <span class="star" data-value="4">&#9733;</span>
-                      <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-muted"></small>
-                      <a href="#checkoutModal" onclick="addToCart('Air Jordan 1 Retro High')">
-                      </a>
-                    </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/adidas1.webp'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <div class="card-body">
+                  <h3>Adidas Run 60s</h3>
+                  <p class="card-price">Harga: Rp 1.800.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Adidas Gazelle Suede')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="<?= base_url('uploads/img/sumbu.png'); ?>" alt="Card image cap" width="100px" height="255">
-                  <div class="card-body">
-                    <h3>Adidas Samba</h3>
-                    <p class="card-price"></p>
-                    <div class="rating">
-                      <span class="star" data-value="1">&#9733;</span>
-                      <span class="star" data-value="2">&#9733;</span>
-                      <span class="star" data-value="3">&#9733;</span>
-                      <span class="star" data-value="4">&#9733;</span>
-                      <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-muted"></small>
-                      <a href="#checkoutModal" onclick="addToCart('Air Jordan High')">
-                      </a>
-                    </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/samba1.jpg'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <div class="card-body">
+                  <h3>Adidas Samba Original</h3>
+                  <p class="card-price">Harga: Rp 1.500.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Adidas Samba')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                  <img class="card-img-top" src="<?= base_url('uploads/img/puma.png'); ?>" alt="Card image cap" width="100px" height="255"> 
-                  <div class="card-body">
-                    <h3>Puma Suede XL</h3>
-                    <p class="card-price"></p>
-                    <div class="rating">
-                      <span class="star" data-value="1">&#9733;</span>
-                      <span class="star" data-value="2">&#9733;</span>
-                      <span class="star" data-value="3">&#9733;</span>
-                      <span class="star" data-value="4">&#9733;</span>
-                      <span class="star" data-value="5">&#9733;</span>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <small class="text-muted"></small>
-                      <a href="#checkoutModal" onclick="addToCart('Air Jordan Travis Scott')">
-                      </a>
-                    </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/superstar.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Adidas SuperStar</h3>
+                  <p class="card-price">Harga: Rp 1.700.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Adidas Campus')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/puma.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Puma Suede</h3>
+                  <p class="card-price">Harga: Rp 2.200.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Puma Suede')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/pumi.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Puma Suede Otherside</h3>
+                  <p class="card-price">Harga: Rp 2.300.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Puma Suede Otherside')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="<?= base_url('uploads/img/pumaitem.webp'); ?>" alt="Card image cap" width="100px" height="255">
+                <div class="card-body">
+                  <h3>Puma Suede XLt</h3>
+                  <p class="card-price">Harga: Rp 2.400.000</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted"></small>
+                    <a href="#checkoutModal" onclick="addToCart('Puma Speedcat')">
+                      <img src="https://img.icons8.com/ios-filled/50/FFA500/shopping-cart.png" alt="Keranjang" width="30" height="30" style="margin-right: 5px;">
+                    </a>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Checkout Modal -->
@@ -414,26 +481,10 @@
         }
       }
 
-      /* Rating Styles */
-      .rating {
-        display: flex;
-        justify-content: center;
-        margin-top: 5px;
-      }
-
-      .star {
-        font-size: 20px; /* Ukuran bintang */
-        color: gold; /* Warna bintang */
-        cursor: pointer; /* Menunjukkan bahwa bintang dapat diklik */
-      }
-
-      .star:hover {
-        color: orange; /* Warna saat hover */
-      }
-
-      /* Custom margin class */
-      .ml-3 {
-        margin-left: 1rem; /* Mengatur jarak ke kiri */
+      /* Custom styles for the button alignment */
+      .ml-auto {
+        margin-left: auto; /* Menggeser elemen ke kanan */
       }
     </style>
 </body>
+</html>

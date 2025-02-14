@@ -8,4 +8,10 @@ class Home extends BaseController
     {
         return view('toko_sepatu/home');
     }
+
+    public function pria_page(): string
+    {
+        return view('toko_sepatu/pria');
+    }
+
 }
