@@ -3,27 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Create Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="login-container">
     <img src="<?php echo base_url('uploads/img/profile.jpg'); ?>" class="avatar" alt="User Avatar">
-        <h2>Login Here</h2>
+  <h2>Create Here</h2>
+        <form action="<?= base_url('/') ?>" method="post">
+        <label for="username">Username</label>
+         <input type="text" name="username" required>
 
-        <form action="<?= base_url('/process_login') ?>" method="post">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter Name" >
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter Password" >
-            
-            <button type="submit">Login</button>
+         <label for="password">Password</label> 
+         <input type="password" name="password" required>   
 
-            <div class="links">
-                <a href="/create">Create Account</a>
-            </div>
-        </form>
+    <button type="submit">Create</button>
+    <div class="links">
+            <a href="/login">Login Account</a>
+        </div>
+</form>
 
     </div>
 </body>

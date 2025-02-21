@@ -29,12 +29,11 @@
                 <a class="nav-link" href="<?= base_url('/'); ?>">BERANDA <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('/pria'); ?>">PRIA</a>
+                <a class="nav-link" href="<?php echo site_url('/Pria'); ?>">PRIA</a>
               </li>
               <li class="nav-item">
-              <a class="nav-link" href="<?php echo site_url('/Wanita'); ?>">WANITA</a>      
+              <a class="nav-link" href="<?php echo site_url('/Wanita'); ?>">WANITA</a> 
               </li>
-              
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
@@ -101,39 +100,39 @@
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/abu.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/nikecwe1.jpeg'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Nike Air Jordan</h3>
+                  <h3>Nike Air Zoom Pegasus</h3>
                   <p class="card-price">Harga: Rp 2.500.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Air Jordan 1 Retro High')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/gbr6.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/nikecwe2.jpg'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Nike Air Jordan 1 </h3>
+                  <h3>Nike Vision Low</h3>
                   <p class="card-price">Harga: Rp 2.000.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Air Jordan High')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/tn.webp'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <img class="card-img-top" src="<?= base_url('uploads/img/cewe.jpeg'); ?>" alt="Card image cap" width="100px" height="255"> 
                 <div class="card-body">
-                  <h3>Nike TN AIRMAX</h3>
+                  <h3>Nike Dunk Low Pro</h3>
                   <p class="card-price">Harga: Rp 3.000.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Air Jordan Travis Scott')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
@@ -141,39 +140,39 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/adidas1.webp'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <img class="card-img-top" src="<?= base_url('uploads/img/adidascwe4baru.png'); ?>" alt="Card image cap" width="100px" height="255"> 
                 <div class="card-body">
-                  <h3>Adidas Run 60s</h3>
+                  <h3>Adidas Gazelle</h3>
                   <p class="card-price">Harga: Rp 1.800.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Adidas Gazelle Suede')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/samba1.jpg'); ?>" alt="Card image cap" width="100px" height="255"> 
+                <img class="card-img-top" src="<?= base_url('uploads/img/adidascwe5baru.png'); ?>" alt="Card image cap" width="100px" height="255"> 
                 <div class="card-body">
-                  <h3>Adidas Samba Original</h3>
+                  <h3>Adidas Edge Lux 4</h3>
                   <p class="card-price">Harga: Rp 1.500.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Adidas Samba')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/superstar.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/ciwa.jpg'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Adidas SuperStar</h3>
+                  <h3>Adidas X_PRL Phase</h3>
                   <p class="card-price">Harga: Rp 1.700.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Adidas Campus')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
@@ -181,39 +180,39 @@
 
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/puma.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/women.webp'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Puma Suede</h3>
+                  <h3>Puma women </h3>
                   <p class="card-price">Harga: Rp 2.200.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Puma Suede')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/pumi.jpg'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/sport.webp'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Puma Suede Otherside</h3>
+                  <h3>Puma Pro Sport</h3>
                   <p class="card-price">Harga: Rp 2.300.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Puma Suede Otherside')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
-                <img class="card-img-top" src="<?= base_url('uploads/img/pumaitem.webp'); ?>" alt="Card image cap" width="100px" height="255">
+                <img class="card-img-top" src="<?= base_url('uploads/img/shoes.webp'); ?>" alt="Card image cap" width="100px" height="255">
                 <div class="card-body">
-                  <h3>Puma Suede XLt</h3>
+                  <h3>Puma Shoes Mayze</h3>
                   <p class="card-price">Harga: Rp 2.400.000</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <small class="text-muted"></small>
-                    <button type="button" class="btn btn-success" onclick="addToCart('Puma Speedcat')">Buy</button>
+                    <button type="button" class="btn btn-success">Buy</button>
                   </div>
                 </div>
               </div>
@@ -282,6 +281,14 @@
           cartItemsList.appendChild(li);
         });
       }
+
+      // Example of adding items to cart on button click
+      document.querySelectorAll('.btn-success').forEach(button => {
+        button.addEventListener('click', function() {
+          const itemName = this.closest('.card-body').querySelector('h3').textContent;
+          addToCart(itemName);
+        });
+      });
 
       // Function to handle search
       function handleSearch(event) {

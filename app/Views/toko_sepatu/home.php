@@ -26,19 +26,16 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="<?= base_url('/'); ?>">BERANDA <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="<?= base_url('/Home'); ?>">BERANDA <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="<?php echo site_url('pria_page'); ?>">PRIA</a>
+                <a class="nav-link" href="<?php echo site_url('/Pria'); ?>">PRIA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="wanita.html">WANITA</a>
+                <a class="nav-link" href="<?php echo site_url('/Wanita'); ?>">WANITA</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="anak.html">ANAK</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">CONTACT</a>
+                <a class="nav-link" href="<?php echo site_url('/Contact'); ?>">CONTACT</a>
               </li>
             </ul>
             
@@ -52,49 +49,55 @@
             <button type="button" class="btn btn-primary ml-auto" data-toggle="modal" data-target="#checkoutModal">
               KERANJANG CEKOUT
             </button>
+
+            <!-- Button Log Out -->
+            <button type="button" class="btn btn-danger ml-2" onclick="logout()">
+              LOG OUT
+            </button>
           </div>
         </div>
       </nav>
     </header>
-
+      
     <main role="main">
 
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="<?= base_url('uploads/img/ronal.jpg'); ?>" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1></h1> 
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="<?= base_url('uploads/img/top.png'); ?>" alt="Second slide">
-            <div class="container">
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="<?= base_url('uploads/img/nike.jpg'); ?>" alt="Third slide">
-            <div class="container">
-            </div>
-          </div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="first-slide" src="<?= base_url('uploads/img/ronal.jpg'); ?>" alt="First slide">
+      <div class="container">
+        <div class="carousel-caption text-left">
+          <h1></h1> 
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+    </div>
+    <div class="carousel-item">
+      <img class="second-slide" src="<?= base_url('uploads/img/top.png'); ?>" alt="Second slide">
+      <div class="container">
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="third-slide" src="<?= base_url('uploads/img/model3.jpg'); ?>" alt="Third slide">
+      <div class="container">
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
+    <main role="main">
       <div class="container marketing">
         <div class="row">
           <div class="col-lg-4">
@@ -245,29 +248,27 @@
         });
       }
 
-      // Example of adding items to cart on button click
-      document.querySelectorAll('.btn-success').forEach(button => {
-        button.addEventListener('click', function() {
-          const itemName = this.closest('.card-body').querySelector('h3').textContent;
-          addToCart(itemName);
-        });
-      });
-
       // Function to handle search
       function handleSearch(event) {
         event.preventDefault(); // Prevent form submission
         const query = document.getElementById('searchInput').value.toLowerCase();
 
         // Redirect based on search query
-        if (query === 'nike') {
-          window.location.href = 'services.html'; // Ganti dengan URL halaman Nike
-        } else if (query === 'adidas') {
-          window.location.href = 'services.html'; // Ganti dengan URL halaman Adidas
-        } else if (query === 'puma') {
-          window.location.href = 'profile.html'; // Ganti dengan URL halaman Puma
+        if (query.includes('sepatu') && query.includes('pria')) {
+          window.location.href = '<?php echo site_url('Pria'); ?>'; // Ganti dengan URL halaman pria
+        } else if (query.includes('sepatu') && query.includes('wanita')) {
+          window.location.href = '<?php echo site_url('Wanita'); ?>'; // Ganti dengan URL halaman wanita
         } else {
-          alert('Merek tidak ditemukan!'); // Pesan jika merek tidak ditemukan
+          alert('Kategori tidak ditemukan!'); // Pesan jika kategori tidak ditemukan
         }
+      }
+
+      // Function to handle logout
+      function logout() {
+        // Implement your logout logic here
+        alert('Anda telah keluar!'); // Contoh alert, ganti dengan logika logout yang sesuai
+        // Redirect to login page or home page
+        window.location.href = '<?php echo site_url('Login'); ?>'; // Ganti dengan URL halaman login
       }
     </script>
 
@@ -435,5 +436,10 @@
       .ml-3 {
         margin-left: 1rem; /* Mengatur jarak ke kiri */
       }
+
+      .ml-2 {
+        margin-left: 0.5rem; /* Mengatur jarak ke kiri */
+      }
     </style>
 </body>
+</html>
